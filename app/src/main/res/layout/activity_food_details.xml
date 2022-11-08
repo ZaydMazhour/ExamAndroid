@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FoodDetailsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_bar_layout"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une annonance"
+        android:textStyle="bold"
+        android:id="@+id/page_title"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:gravity="center"
+        ></TextView>
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_baseline_done_24"
+            android:id="@+id/save_food_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            ></ImageButton>
+        </RelativeLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar_layout"
+       android:orientation="vertical"
+       android:padding="16dp"
+       android:layout_marginVertical="26dp"
+       android:backgroundTint="@color/purple_200">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:id="@+id/food_title_text"
+        android:textSize="20dp"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:layout_marginVertical="8dp">
+        </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Content"
+        android:minLines="15"
+        android:gravity="top"
+        android:id="@+id/food_content_text"
+        android:textSize="20dp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:layout_marginVertical="8dp">
+        </EditText>
+
+       </LinearLayout>
+</RelativeLayout>
